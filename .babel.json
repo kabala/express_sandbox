@@ -1,0 +1,57 @@
+{
+  "{\"filename\":\"/home/nitrous/webpack.config.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false}:6.7.2": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/home/nitrous/webpack.config.js",
+      "filenameRelative": "/home/nitrous/webpack.config.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMap": "both",
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack.config.js",
+      "sourceFileName": "webpack.config.js",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "basename": "webpack.config"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar path = require('path');\nvar webpack = require('webpack');\n\nmodule.exports = {\n  devtool: 'eval-source-map',\n  entry: ['webpack-hot-middleware/client?reload=true', path.join(__dirname, 'app/main.js')],\n  output: {\n    path: path.join(__dirname, '/dist/'),\n    filename: '[name].js',\n    publicPath: '/'\n  },\n  plugins: [new webpack.optimize.OccurenceOrderPlugin(), new webpack.HotModuleReplacementPlugin(), new webpack.NoErrorsPlugin(), new webpack.DefinePlugin({\n    'process.env.NODE_ENV': JSON.stringify('development')\n  })],\n  module: {\n    loaders: [{\n      test: /\\.js?$/,\n      exclude: /node_modules/,\n      loader: 'babel',\n      query: {\n        \"presets\": [\"react\", \"es2015\", \"stage-0\", \"react-hmre\"]\n      }\n    }, { test: /\\.jade?$/,\n      loader: 'jade'\n    }, {\n      test: /\\.json?$/,\n      loader: 'json'\n    }, {\n      test: /\\.css$/,\n      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'\n    }]\n  }\n};\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2suY29uZmlnLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBLElBQUksT0FBTyxRQUFRLE1BQVIsQ0FBUDtBQUNKLElBQUksVUFBVSxRQUFRLFNBQVIsQ0FBVjs7QUFFSixPQUFPLE9BQVAsR0FBaUI7QUFDZixXQUFTLGlCQUFUO0FBQ0EsU0FBTyxDQUNMLDJDQURLLEVBRUwsS0FBSyxJQUFMLENBQVUsU0FBVixFQUFxQixhQUFyQixDQUZLLENBQVA7QUFJQSxVQUFRO0FBQ04sVUFBTSxLQUFLLElBQUwsQ0FBVSxTQUFWLEVBQXFCLFFBQXJCLENBQU47QUFDQSxjQUFVLFdBQVY7QUFDQSxnQkFBWSxHQUFaO0dBSEY7QUFLQSxXQUFTLENBQ1AsSUFBSSxRQUFRLFFBQVIsQ0FBaUIsb0JBQWpCLEVBREcsRUFFUCxJQUFJLFFBQVEsMEJBQVIsRUFGRyxFQUdQLElBQUksUUFBUSxjQUFSLEVBSEcsRUFJUCxJQUFJLFFBQVEsWUFBUixDQUFxQjtBQUN2Qiw0QkFBd0IsS0FBSyxTQUFMLENBQWUsYUFBZixDQUF4QjtHQURGLENBSk8sQ0FBVDtBQVFBLFVBQVE7QUFDTixhQUFTLENBQUM7QUFDUixZQUFNLFFBQU47QUFDQSxlQUFTLGNBQVQ7QUFDQSxjQUFRLE9BQVI7QUFDQSxhQUFPO0FBQ0wsbUJBQVcsQ0FBQyxPQUFELEVBQVUsUUFBVixFQUFvQixTQUFwQixFQUErQixZQUEvQixDQUFYO09BREY7S0FKTyxFQVFULEVBQUMsTUFBTSxVQUFOO0FBQ0QsY0FBUSxNQUFSO0tBVFMsRUFVTjtBQUNELFlBQU0sVUFBTjtBQUNBLGNBQVEsTUFBUjtLQVpPLEVBYU47QUFDRCxZQUFNLFFBQU47QUFDQSxjQUFRLHFFQUFSO0tBZk8sQ0FBVDtHQURGO0NBbkJGIiwiZmlsZSI6IndlYnBhY2suY29uZmlnLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuXG52YXIgcGF0aCA9IHJlcXVpcmUoJ3BhdGgnKTtcbnZhciB3ZWJwYWNrID0gcmVxdWlyZSgnd2VicGFjaycpO1xuXG5tb2R1bGUuZXhwb3J0cyA9IHtcbiAgZGV2dG9vbDogJ2V2YWwtc291cmNlLW1hcCcsXG4gIGVudHJ5OiBbXG4gICAgJ3dlYnBhY2staG90LW1pZGRsZXdhcmUvY2xpZW50P3JlbG9hZD10cnVlJyxcbiAgICBwYXRoLmpvaW4oX19kaXJuYW1lLCAnYXBwL21haW4uanMnKVxuICBdLFxuICBvdXRwdXQ6IHtcbiAgICBwYXRoOiBwYXRoLmpvaW4oX19kaXJuYW1lLCAnL2Rpc3QvJyksXG4gICAgZmlsZW5hbWU6ICdbbmFtZV0uanMnLFxuICAgIHB1YmxpY1BhdGg6ICcvJ1xuICB9LFxuICBwbHVnaW5zOiBbXG4gICAgbmV3IHdlYnBhY2sub3B0aW1pemUuT2NjdXJlbmNlT3JkZXJQbHVnaW4oKSxcbiAgICBuZXcgd2VicGFjay5Ib3RNb2R1bGVSZXBsYWNlbWVudFBsdWdpbigpLFxuICAgIG5ldyB3ZWJwYWNrLk5vRXJyb3JzUGx1Z2luKCksXG4gICAgbmV3IHdlYnBhY2suRGVmaW5lUGx1Z2luKHtcbiAgICAgICdwcm9jZXNzLmVudi5OT0RFX0VOVic6IEpTT04uc3RyaW5naWZ5KCdkZXZlbG9wbWVudCcpXG4gICAgfSlcbiAgXSxcbiAgbW9kdWxlOiB7XG4gICAgbG9hZGVyczogW3tcbiAgICAgIHRlc3Q6IC9cXC5qcz8kLyxcbiAgICAgIGV4Y2x1ZGU6IC9ub2RlX21vZHVsZXMvLFxuICAgICAgbG9hZGVyOiAnYmFiZWwnLFxuICAgICAgcXVlcnk6IHtcbiAgICAgICAgXCJwcmVzZXRzXCI6IFtcInJlYWN0XCIsIFwiZXMyMDE1XCIsIFwic3RhZ2UtMFwiLCBcInJlYWN0LWhtcmVcIl1cbiAgICAgIH1cbiAgICB9LFxuICAgIHt0ZXN0OiAvXFwuamFkZT8kLyxcbiAgICBsb2FkZXI6ICdqYWRlJ1xuICAgIH0sIHtcbiAgICAgIHRlc3Q6IC9cXC5qc29uPyQvLFxuICAgICAgbG9hZGVyOiAnanNvbidcbiAgICB9LCB7XG4gICAgICB0ZXN0OiAvXFwuY3NzJC8sXG4gICAgICBsb2FkZXI6ICdzdHlsZSFjc3M/bW9kdWxlcyZsb2NhbElkZW50TmFtZT1bbmFtZV0tLS1bbG9jYWxdLS0tW2hhc2g6YmFzZTY0OjVdJ1xuICAgIH1dXG4gIH1cbn07XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack.config.js"
+      ],
+      "names": [],
+      "mappings": "AAAA;;AAEA,IAAI,OAAO,QAAQ,MAAR,CAAP;AACJ,IAAI,UAAU,QAAQ,SAAR,CAAV;;AAEJ,OAAO,OAAP,GAAiB;AACf,WAAS,iBAAT;AACA,SAAO,CACL,2CADK,EAEL,KAAK,IAAL,CAAU,SAAV,EAAqB,aAArB,CAFK,CAAP;AAIA,UAAQ;AACN,UAAM,KAAK,IAAL,CAAU,SAAV,EAAqB,QAArB,CAAN;AACA,cAAU,WAAV;AACA,gBAAY,GAAZ;GAHF;AAKA,WAAS,CACP,IAAI,QAAQ,QAAR,CAAiB,oBAAjB,EADG,EAEP,IAAI,QAAQ,0BAAR,EAFG,EAGP,IAAI,QAAQ,cAAR,EAHG,EAIP,IAAI,QAAQ,YAAR,CAAqB;AACvB,4BAAwB,KAAK,SAAL,CAAe,aAAf,CAAxB;GADF,CAJO,CAAT;AAQA,UAAQ;AACN,aAAS,CAAC;AACR,YAAM,QAAN;AACA,eAAS,cAAT;AACA,cAAQ,OAAR;AACA,aAAO;AACL,mBAAW,CAAC,OAAD,EAAU,QAAV,EAAoB,SAApB,EAA+B,YAA/B,CAAX;OADF;KAJO,EAQT,EAAC,MAAM,UAAN;AACD,cAAQ,MAAR;KATS,EAUN;AACD,YAAM,UAAN;AACA,cAAQ,MAAR;KAZO,EAaN;AACD,YAAM,QAAN;AACA,cAAQ,qEAAR;KAfO,CAAT;GADF;CAnBF",
+      "file": "webpack.config.js",
+      "sourcesContent": [
+        "'use strict';\n\nvar path = require('path');\nvar webpack = require('webpack');\n\nmodule.exports = {\n  devtool: 'eval-source-map',\n  entry: [\n    'webpack-hot-middleware/client?reload=true',\n    path.join(__dirname, 'app/main.js')\n  ],\n  output: {\n    path: path.join(__dirname, '/dist/'),\n    filename: '[name].js',\n    publicPath: '/'\n  },\n  plugins: [\n    new webpack.optimize.OccurenceOrderPlugin(),\n    new webpack.HotModuleReplacementPlugin(),\n    new webpack.NoErrorsPlugin(),\n    new webpack.DefinePlugin({\n      'process.env.NODE_ENV': JSON.stringify('development')\n    })\n  ],\n  module: {\n    loaders: [{\n      test: /\\.js?$/,\n      exclude: /node_modules/,\n      loader: 'babel',\n      query: {\n        \"presets\": [\"react\", \"es2015\", \"stage-0\", \"react-hmre\"]\n      }\n    },\n    {test: /\\.jade?$/,\n    loader: 'jade'\n    }, {\n      test: /\\.json?$/,\n      loader: 'json'\n    }, {\n      test: /\\.css$/,\n      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'\n    }]\n  }\n};\n"
+      ]
+    },
+    "mtime": 1458601576282
+  }
+}

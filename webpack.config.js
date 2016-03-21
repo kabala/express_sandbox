@@ -2,7 +2,6 @@
 
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -16,11 +15,6 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'app/index.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -36,6 +30,9 @@ module.exports = {
       query: {
         "presets": ["react", "es2015", "stage-0", "react-hmre"]
       }
+    },
+    {test: /\.jade?$/,
+    loader: 'jade'
     }, {
       test: /\.json?$/,
       loader: 'json'
